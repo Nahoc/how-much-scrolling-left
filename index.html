@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miel Abit&eacute;mis</title>
+    <meta name="description" content="Site Web officiel Miel Abit&eacute;mis, entreprise originaire de l'Abitibi-T&eacute;miscamingue." />
+    <meta name="keyword" content="abitemis, abit&eacute;mis, mielabitemis, mielabit&eacute;mis, miel, Abitibi-T&eacute;miscamingue, T&eacute;miscamingue, abeille, entreprise, locale, r&eacute;gion, region, T&eacute;treault, Tetreault, t&eacute;miscamingue, abitibi, abitibi-t&eacute;miscamingue, miellerie, produits, r&eacute;gional" />
+    <META NAME="ROBOTS" CONTENT="INDEX, NOFOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <link type="text/css" href="css/styles.css" rel="stylesheet" />
+    <link type="text/css" href="css/animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script>
+        window.onload = configurer;
+
+        function configurer() {
+            document.getElementById("lien-nos-produits").onclick = faireChangerSection;
+            document.getElementById("lien-partenaires").onclick = faireChangerSection;
+            document.getElementById("lien-points-de-vente").onclick = faireChangerSection;
+            document.getElementById("lien-notre-equipe").onclick = faireChangerSection;
+            document.getElementById("lien-nous-joindre").onclick = faireChangerSection;
+            document.getElementById("nos-produits").changerSection = changerSection;
+            document.getElementById("partenaires").changerSection = changerSection;
+            document.getElementById("points-de-vente").changerSection = changerSection;
+            document.getElementById("notre-equipe").changerSection = changerSection;
+            document.getElementById("nous-joindre").changerSection = changerSection;
+            document.getElementById("nos-produits").mettreVisible = mettreVisible;
+            document.getElementById("partenaires").mettreVisible = mettreVisible;
+            document.getElementById("points-de-vente").mettreVisible = mettreVisible;
+            document.getElementById("notre-equipe").mettreVisible = mettreVisible;
+            document.getElementById("nous-joindre").mettreVisible = mettreVisible;
+        }
+
+        function faireChangerSection() {
+            document.getElementById("nos-produits").changerSection();
+            document.getElementById("partenaires").changerSection();
+            document.getElementById("points-de-vente").changerSection();
+            document.getElementById("notre-equipe").changerSection();
+            document.getElementById("nous-joindre").changerSection();
+            document.getElementById(this.id.substr(5)).mettreVisible();
+        }
+
+        function changerSection() {
+            this.className = "invisible";
+        }
+
+        function mettreVisible() {
+            this.className = "visible";
+        }
+    </script>
+</head>
+
+<body>
+    <nav role="navigation">
+        <ul class="cercles">
+            <li>
+                <div id="cercle-1">cercle 1</div>
+            </li>
+            <li>
+                <div id="cercle-2">cercle 2</div>
+            </li>
+            <li>
+                <div id="cercle-3">cercle 3</div>
+            </li>
+            <li>
+                <div id="cercle-4">cercle 4</div>
+            </li>
+        </ul>
+        <ul class="langues">
+            <li><i class="fa fa-shopping-cart"></i> Panier</li>
+            <li><a class="selected" href="#">FR</a>
+            </li>
+            <li><a href="#">EN</a>
+            </li>
+        </ul>
+        <div id="visionneuse">visionneuse</div>
+        <ul class="sections cl-effect-1">
+            <li><a id="lien-nos-produits" href="#">Nos produits</a>
+            </li>
+            <li><a id="lien-partenaires" href="#">Partenaires</a>
+            </li>
+            <li><a id="lien-points-de-vente" href="#">Points de vente</a>
+            </li>
+            <li><a id="lien-notre-equipe" href="#">Notre équipe</a>
+            </li>
+            <li><a id="lien-nous-joindre" href="#">Nous joindre</a>
+            </li>
+        </ul>
+    </nav>
+    <main role="main">
+        <section id="nos-produits" class="visible">
+            <h1>Nos produits</h1>
+            <p class="animated fadeIn intro">Le miel ajoute une petite touche de saveur unique à tout ce que nous mangeons, qu’il soit dégusté sur des rôties, crêpes ou gaufres, utilisé pour sucrer le café ou les céréales, ajouté aux infusions de toutes sortes, utilisé dans le yogourt, fromage, charcuterie, vinaigrette, différents plats ou pâtisseries, ou encore tout simplement dégusté à la petite cuillère.</p>
+            <section id="miel-de-trefle" class="animated fadeInRight">
+                <div class="wrapper-img">
+                    <a id="img-miel-de-trefle" href="#">miel de trèfle</a>
+                </div>
+                <div class="produits-content">
+                    <h2>Miel de trèfle</h2>
+                    <p>Ce miel pâle au parfum délicat est récolté au coeur de l’été.</p>
+                    <ul class="formats">
+                        <p>Formats disponibles :</p>
+                        <li>250g</li>
+                        <li>375g</li>
+                        <li>500g</li>
+                        <li>1kg</li>
+                        <li>3kg</li>
+                        <li>7kg</li>
+                        <li>15kg</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="miel-de-trefle-cremeux" class="animated fadeInLeft">
+                <div class="wrapper-img">
+                    <a id="img-miel-de-trefle-cremeux" href="#">miel de trèfle crémeux</a>
+                </div>
+                <div class="produits-content">
+                    <h2>Miel de trèfle crémeux</h2>
+                    <p>Ce miel crémeux doit être entreposé dans un endroit frais si vous voulez qu'il conserve sa texture crémeuse.</p>
+                    <ul class="formats">
+                        <p>Formats disponibles :</p>
+                        <li>250g</li>
+                        <li>500g</li>
+                        <li>1kg</li>
+                        <li>2kg</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="miel-de-bleuet" class="animated fadeInRight">
+                <div class="wrapper-img">
+                    <a id="img-miel-de-bleuet" href="#">miel de bleuet</a>
+                </div>
+                <div class="produits-content">
+                    <h2>Miel de bleuet</h2>
+                    <p>Ce miel au goût particulier, caractérisé par son arôme subtil, est beaucoup plus fort que le miel de trèfle. Les ruches sont transportées directement dans les bleuetières, au printemps, durant la période de floraison, pour assurer sa production.</p>
+                    <ul class="formats">
+                        <p>Format disponible :</p>
+                        <li>250g</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="miel-de-fleurs-sauvages" class="animated fadeInLeft">
+                <div class="wrapper-img">
+                    <a id="img-miel-de-fleurs-sauvages" href="#">miel de fleurs sauvages</a>
+                </div>
+                <div class="produits-content">
+                    <h2>Miel de fleurs sauvages</h2>
+                    <p>Ce miel au goût plus corsé et de couleur dorée provient de fleurs telles que le pissenlit, l’aster et la verge d'or. Ce miel est surtout un miel d'automne ou de printemps.</p>
+                    <ul class="formats">
+                        <p>Format disponible :</p>
+                        <li>250g</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="miel-de-sarrasin" class="animated fadeInRight">
+                <div class="wrapper-img">
+                    <a id="img-miel-de-sarrasin" href="#">miel de sarrasin</a>
+                </div>
+                <div class="produits-content">
+                    <h2>Miel de sarrasin</h2>
+                    <p>Ce miel de couleur très foncé vous surprendra par son goût très prononcé. </p>
+                    <ul class="formats">
+                        <p>Format disponible :</p>
+                        <li>250g</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="gelee-royale" class="animated fadeInLeft">
+                <div class="wrapper-img">
+                    <a id="img-gelee-royale" href="#">gelée royale</a>
+                </div>
+                <div class="produits-content">
+                    <h2>La gelée royale</h2>
+                    <p>C’est, entre autres, cette nourriture d’exception qui permet à la reine de la ruche de vivre de trois à quatre ans et de pondre jusqu’à 2000 œufs par jour. Cette gelée est fabriquée par les abeilles et aurait des effets bénéfiques sur notre vitalité.</p>
+                </div>
+            </section>
+            <section id="pollen" class="animated fadeInRight">
+                <div class="wrapper-img">
+                    <a id="img-pollen" href="#">pollen</a>
+                </div>
+                <div class="produits-content">
+                    <h2>Le pollen</h2>
+                    <p>Il peut aider lors d'une fatigue générale, d'insuffisance des défenses immunitaires, de troubles hépatiques ou troubles du sommeil, lorsque vous souffrez de diabète ou que vous avez des troubles intestinaux. De plus, le pollen peut être bénéfique lorsque vous souffrez d'allergie et de rhumatisme.</p>
+                </div>
+            </section>
+        </section>
+        <section id="partenaires" class="invisible"></section>
+        <section id="points-de-vente" class="invisible">
+            <h2>Points de vente Québec / Ontario</h2>
+        </section>
+        <section id="notre-equipe" class="invisible">
+            <h2>Notre équipe</h2>
+            <a class="notre-equipe" href="#">notre equipe</a>
+            <p class="partie-1">Originaire de Sainte-Madeleine, un petit village près de St-Hyacinthe, Germain Tétreault prend conscience très jeune qu’il a une passion peu commune : les abeilles et tout ce qui les entoure. Même si elles peuvent être effrayantes pour certaines personnes, Germain ressent une réelle fascination pour celles-ci. Vers l’âge de 21 ans, il quitte le Québec pour aller en apprendre davantage sur l’apiculture. Il passera quatre ans en Saskatchewan, où il travaillera chez plusieurs apiculteurs de cette province, pour ensuite revenir s’établir au Québec. Il s’installera au Témiscamingue, plus précisément à St-Bruno-de-Guigues, une région propice à l’élevage des abeilles. Il créera par la suite l’entreprise Miel Abitémis. Ayant su transmettre sa passion et ses connaissances, la relève familiale, déjà bien établie dans l’entreprise, assurera le développement et la continuité de cette belle entreprise.</p>
+            <img src="images/famille.jpg" alt="famille">
+            <p class="partie-2">Miel Abitémis est une entreprise familiale qui produit un miel non-pasteurisé d’une très grande qualité depuis plus de 30 ans. Le climat estival sec et chaud de notre région, qui est également agrémenté de nuits fraîches, nous permet de produire un miel dont la saveur est unique. Notre passion pour l’apiculture, notre expérience ainsi que notre savoir-faire dans le domaine contribuent à faire de notre miel un miel naturel et délicieux. Les employés de Miel Abitémis ont le souci de produire ce qu’il y a de meilleur et sont heureux d’offrir des produits de qualité, à l’image du Témiscamingue.</p>
+        </section>
+        <section id="nous-joindre" class="invisible">
+            <h2>Pour nous joindre</h2>
+            <img src="images/nous-joindre.jpg" alt="nous joindre">
+            <p class="animated fadeIn">149, route 101
+                <br/>St-Bruno de Guigues, QC
+                <br/>J0Z 2G0
+                <br/>Téléphone: 819-728-2087
+                <br/>Télécopieur: 819-728-2876
+                <br/>Courriel: contact@mielabitemis.com</p>
+        </section>
+        <footer role="footer">
+            <div class="footer-content">
+                <a class="facebook" href="#">facebook</a>
+                <small>Tous droits réservés © 2015 Abitémis inc.</small>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
